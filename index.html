@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--link cdn icon bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- link css-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fareza.com</title>
+
+    <style>
+      .foto{
+        transform: scale(1);
+        transition: 1s ease;
+      }
+      .foto:hover{
+        box-shadow: 5px 5px 7px grey;
+        transform: scale(0.87);
+      }
+      .typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width:10% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.barhtml{
+  width: 0%;
+  animation-name: barhtml;
+  animation-duration: 2s;
+  animation-fill-mode:both;
+  animation-iteration-count: 1;
+}
+@keyframes barhtml {
+  0% {width:0%;}
+    100% {width:90%;}
+}
+.barcss{
+  width: 0%;
+  animation-name: barcss;
+  animation-duration: 2s;
+  animation-fill-mode:both;
+  animation-iteration-count: 1;
+}
+
+@keyframes barcss {
+  0%{width:0%;}
+    100% {width:80%;}
+}
+.barbootstrap{
+  width: 0%;
+  animation-name: barbootstrap;
+  animation-duration: 2s;
+  animation-fill-mode:both;
+  animation-iteration-count: 1;
+}
+
+@keyframes barbootstrap {
+  0%{width:0%;}
+    100% {width:70%;}
+}
+    </style>
+
+  </head>
+  <body id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #e5989b;">
+        <div class="container">
+          <a class="navbar-brand" href="#">Web Portofolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="uiux.html">UI/UX Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--JUMBOTRON -->
+      <section class="jumbotron text-center">
+          <img src="img/ukhti.jpeg" alt="fareza.jpg" width="200"
+          class="rounded-circle img-thumbnail foto">
+        <h1 class="display-4">FAREZA HARUM PUTRI</h1>
+        <p class="typewriter lead">College Student || Freelancer</p>
+        <a href="https://www.linkedin.com/in/farezahp/" class="link-dark"><i class="bi bi-linkedin p-2"></i></a>
+        <a href="https://github.com/farezahp" class="link-dark"><i class="bi bi-github p-2"></i></a>
+        <a href="https://wa.me/+6285156245793?text=Halo%20Fareza%2C" class="link-dark"><i class="bi bi-whatsapp p-2"></i></a>
+        <svg xmlns="http://www.w3.org/2000/svg" data-aos="fade-up" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L15,277.3C30,267,60,245,90,245.3C120,245,150,267,180,245.3C210,224,240,160,270,138.7C300,117,330,139,360,154.7C390,171,420,181,450,176C480,171,510,149,540,149.3C570,149,600,171,630,186.7C660,203,690,213,720,197.3C750,181,780,139,810,133.3C840,128,870,160,900,165.3C930,171,960,149,990,128C1020,107,1050,85,1080,69.3C1110,53,1140,43,1170,58.7C1200,75,1230,117,1260,133.3C1290,149,1320,139,1350,133.3C1380,128,1410,128,1425,128L1440,128L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>
+        
+      </section>
+      <!--akhir jumbotron-->
+
+      <!-- about -->
+      <section id="about">
+          <div class="container">
+              <div class="row text-center mb-3">
+                  <div class="col">
+                      <h2>About Me</h2>
+                  </div>
+              </div>
+              <div class="row justify-content-center fs-5 text-center ">
+                  <div class="col-md-4" data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                    <p style="text-align: justify;"> Helo, let me introduce my self first. My name is Fareza Harum Putri, now i lived in Yogyakarta. </p>
+                  </div>
+                  <div class="col-md-4" data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine" >
+                      <p style="text-align: justify;">I am a Student in Universitas Teknologi Digital Indonesia also Freelancer as a Mentor. My hobby is sketch, desain, watching film, writting and many more.</p>
+                  </div>
+              </div>
+          </div>
+          
+          
+      </section>
+      <!-- akhir about -->
+      
+
+      <!-- skill -->
+      <section>
+        
+        <div class="card m-5">
+            
+            <div class="card-body" style="background-color: #f5cac3;">
+              <h5 class="card-title text-center">My Special Skill</h5>
+              <div class="row justify-content-center fs-5 text-center p-5">
+                <div class="col-md-4">
+                  <p>An Undergraduate Informatics student who responsible and enthusiastic in UI/UX
+                    and Web Development.</p>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="progress m-2" style="height: 35px;">
+                        <div class="progress-bar text-left p-3 bg-success  progress-bar-animated barhtml"><h5>UI/UX 90%</h5></div>
+                    </div>
+                    <div class="progress m-2" style="height: 35px;">
+                        <div class="progress-bar text-left p-3 bg-warning  progress-bar-animated barcss"><h5>FRONTEND DEV 80%</h5></div>
+                    </div>
+                    <div class="progress m-2" style="height: 35px;">
+                        <div class="progress-bar text-left p-3 bg-danger  progress-bar-animated barbootstrap"><h5>COPYWRITING 70%</h5></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+              
+            </div>
+          </div>
+       
+      </section>
+      
+      <!-- boxes -->
+      <section id="boxes" class="">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card text-dark" style="background-color: #e9d8a6;">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                UI/UX
+                            </h3>
+                            <p class="card-text">
+                                I love following many things about Technology, also Framework that makes my Web Design look more beautiful. Here it is my Inspiration
+                            </p>
+                            <a href="uiux.html" class="btn btn-dark">read more</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card text-dark" style="background-color: #e9d8a6;">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                              <i class="bi bi-journals"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Copywriting
+                            </h3>
+                            <p class="card-text">
+                                Sometimes i made Journals about my self or anything that cross from my head. Because writting about anything random is fun!
+                            </p>
+                            <a href="#" class="btn btn-dark">read more</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                  <div class="card text-dark" style="background-color: #e9d8a6;">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                          <i class="bi bi-palette"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Draw & Sketch
+                        </h3>
+                        <p class="card-text">
+                            On my weekend sometimes i draw an sketch just for fun! or mock up for my desing soon! it is an also brainstorming for myself.
+                        </p>
+                        <a href="#" class="btn btn-dark">read more</a>
+                        
+                    </div>
+                </div></div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e5989b" fill-opacity="1" d="M0,288L15,277.3C30,267,60,245,90,245.3C120,245,150,267,180,245.3C210,224,240,160,270,138.7C300,117,330,139,360,154.7C390,171,420,181,450,176C480,171,510,149,540,149.3C570,149,600,171,630,186.7C660,203,690,213,720,197.3C750,181,780,139,810,133.3C840,128,870,160,900,165.3C930,171,960,149,990,128C1020,107,1050,85,1080,69.3C1110,53,1140,43,1170,58.7C1200,75,1230,117,1260,133.3C1290,149,1320,139,1350,133.3C1380,128,1410,128,1425,128L1440,128L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>
+    </section>
+
+
+      <!-- akhir skill -->
+
+      
+
+      <!-- projects -->
+      
+
+      <section id="projects" >
+        
+          <div class="container">
+              <div class="row text-center mb-3">
+                  <div class="col">
+                      <h2>My Web Projects</h2>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/OLSHOP.png" class="card-img-top" alt="project 1">
+                        <div class="card-body">
+                          
+                          <h2><a href="https://olshop-demo.netlify.app/">BAG ONLINE SHOP</a></h2>
+                          <H5>Created on Desember 2021</H5>
+                          <p class="card-text">Project Online Shop for Ayucollection</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/saveerest.png" class="card-img-top" alt="project 2">
+                        <div class="card-body">
+                          <h2><a href="https://saveerest.netlify.app/">SAVEEREST</a></h2>
+                          <H5>Created on Januari 2022</H5>
+                          <p class="card-text">Web Project for Forest Organitation </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/SISTERHOODS.png" class="card-img-top" alt="project 3">
+                        <div class="card-body">
+                          <h2><a href="https://sisterhoods-demo.netlify.app/">SISTERHOODS</a></h2>
+                          <H5>Created on Januari 2022</H5>
+                          <p class="card-text">Web Project, as Frontend Developer sisterhoods.xyz</p>
+                        </div>
+                      </div>
+                  </div>
+                  
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                      <img src="img/sale.png" class="card-img-top" alt="project 1">
+                      <div class="card-body">
+                        
+                        <h2><a href="https://olshop-demo.netlify.app/">SALE</a></h2>
+                        <H5>Created on Desember 2021</H5>
+                        <p class="card-text">Project Online Shop for Ayucollection</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                      <img src="img/DISPLAY CAT.png" class="card-img-top" alt="project 2">
+                      <div class="card-body">
+
+                        <h2><a href="https://myfuuturecat.000webhostapp.com/"> MY FUTURE CAT</a></h2>
+                        <h5>Created on January 2021</h5>
+                        <p class="card-text"> (username : 'fareza' dan pass : 'fareza')</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                      <img src="img/book storage.png" class="card-img-top" alt="project 3">
+                      <div class="card-body">
+                        <h2><a href="https://saveerest.netlify.app/">BOOK STORAGE</a></h2>
+                          <H5>Created on Januari 2021</H5>
+                          <p class="card-text">Web Project for Notes of Book Storage </p>
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L24,186.7C48,181,96,171,144,181.3C192,192,240,224,288,224C336,224,384,192,432,165.3C480,139,528,117,576,122.7C624,128,672,160,720,181.3C768,203,816,213,864,229.3C912,245,960,267,1008,282.7C1056,299,1104,309,1152,277.3C1200,245,1248,171,1296,117.3C1344,64,1392,32,1416,16L1440,0L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+      </section>
+
+      <!-- akhir projects -->
+
+      
+
+      <!-- contact -->
+      <section id="contact">
+          <div class="container">
+              <div class="row text-center mb-3">
+                  <div class="col">
+                      <h2>Get In Touch <i class="bi bi-moon-stars"></i></h2>
+                      <p>Lets talk about Me and You from Here...</p>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" aria-describedby="name">
+                          
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                          </div>
+                          <div class="mb-3">
+                            <label for="pesan" class="form-label">Messages</label>
+                            <textarea class="form-control" id="pesan" rows="5"></textarea>
+                          </div>
+                      
+                        <button type="submit" class="btn btn-outline-danger">Kirim</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e5989b" fill-opacity="1" d="M0,192L24,186.7C48,181,96,171,144,181.3C192,192,240,224,288,224C336,224,384,192,432,165.3C480,139,528,117,576,122.7C624,128,672,160,720,181.3C768,203,816,213,864,229.3C912,245,960,267,1008,282.7C1056,299,1104,309,1152,277.3C1200,245,1248,171,1296,117.3C1344,64,1392,32,1416,16L1440,0L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+      </section>
+
+      <!-- akhir contact -->
+
+      <!-- footer -->
+      <footer class="text-white text-center pb-5" style="background-color: #e5989b;">
+          <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/farezahp/" class="text-white fw-bold">FAREZA</a></p>
+      </footer>
+
+      <!-- akhir footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </body>
+</html>
